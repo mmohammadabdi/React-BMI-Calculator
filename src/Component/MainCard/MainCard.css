@@ -1,0 +1,65 @@
+.main-card {
+  background-color: #ffffff;
+  /* height: 70vh; */
+  width: 90%;
+  margin: auto;
+  padding: 3rem;
+  min-height: 65vh;
+  border-radius: 12px;
+  position: relative;
+}
+.img-cover-answer {
+  position: absolute;
+  background-image: url("../../assets/photos/runner.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 45%;
+  height: 82%;
+  padding: 80px;
+  right: 80px;
+  transition: ease-in-out 0.4s;
+  transform: translateY("80px");
+  /* border: 1px solid red; */
+}
+
+@media screen and (max-width: 992px) {
+  .img-cover-answer {
+    width: 40%;
+    right: 70px;
+    height: 82%;
+    background-size: cover;
+  }
+  .main-card {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .img-cover-answer {
+    display: none;
+  }
+  .main-card {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+}
+
+@media (max-height: 412px) and (max-width: 840px) {
+  .main-card {
+    margin: auto;
+    padding: 0px;
+    min-height: 65vh;
+  }
+  .img-cover-answer {
+    position: absolute;
+    background-image: url("../../assets/photos/runner.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 40%;
+    height: 100%;
+    padding: 80px;
+    right: 80px;
+    transition: ease-in-out 0.4s;
+    transform: translateY("80px");
+    /* border: 1px solid red; */
+  }
+}
